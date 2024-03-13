@@ -4,3 +4,4 @@ data
 models
 *.pyc
 __pycache__
+mikroml.egg-info
