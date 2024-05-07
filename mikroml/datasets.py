@@ -21,7 +21,7 @@ class MNIST_Dataset():
         self.data_file = self.data_path/"mnist.pkl.gz"
         
         if not self.data_file.exists():
-            response = request.urlretrieve(MNIST_URL, data_path/"mnist.pkl.gz")
+            response = request.urlretrieve(MNIST_URL, self.data_path/"mnist.pkl.gz")
         data = gzip.open(self.data_file)
         with gzip.open(self.data_file, mode="rb") as f:
             self.train_set, self.valid_set, self.test_set = pickle.load(f, encoding="latin-1")
