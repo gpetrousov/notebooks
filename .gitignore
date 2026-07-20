@@ -5,3 +5,4 @@ models
 *.pyc
 __pycache__
 mikroml.egg-info
+.ipynb_checkpoints
